@@ -1,0 +1,42 @@
+body{
+	margin-left:50px;
+}
+
+h1{
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 20px;
+	font-kerning: 15px;
+}
+
+div{
+	margin-left: 200px;
+	text-align:left;
+}
+
+span{
+	font-weight:bold;
+}
+
+span.Peter_Venkman{
+	color:blue;
+}
+
+span.Dana{
+	color:red;
+}
+span.Ray_Stantz{
+	color:green;
+}
+span.mayor{
+	color:brown;
+}
+span.Egon_Spengler{
+	color:navy;
+}
+span.Winston{
+	color:purple;
+}
+span.action{
+	font-style: italic;
+}
