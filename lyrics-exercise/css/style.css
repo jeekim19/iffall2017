@@ -1,0 +1,30 @@
+body{
+	margin-left:50px;
+}
+
+h1{
+	font-weight:bolder;
+	font-size: 20px;
+	font-kerning: 15px;
+}
+
+div{
+	margin-left: 100px;
+	text-align: left;
+}
+
+span.verse1 {
+	color:blue;
+}
+
+span.verse2 {
+	color:green;
+}
+
+span.super_rock_part {
+	color:red;
+}
+span.rock_ctd{
+	color:red;
+	font-weight:bold;
+}
