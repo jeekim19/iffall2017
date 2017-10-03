@@ -1,0 +1,176 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:'Archivo Narrow',sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+	margin-top:0;
+	margin-bottom:.5em;
+}
+
+
+section#top_section{
+	background-color:#c98db5;
+	background-image:url("https://i.pinimg.com/736x/a1/8c/03/a18c032379c55d0b57d4d7a3aae15455--black-white-photography-light-photography-shadows.jpg");
+	background-blend-mode:overlay;
+	background-size:cover;
+	background-position: center -200px;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height:325px;
+	text-align:center;
+	padding-top: 155px;
+	color:rgba(160,141,181,.7);
+	margin:auto;
+
+}
+
+#top_section h1{
+	font-size:80.5px;
+	margin-bottom: 0em;
+}
+
+#top_section h2{
+	font-size:30px;
+}
+
+section#section_two{
+	background-color:#b9a7ca;
+	height:645px;
+	text-align: left;
+}
+
+#section_two div{
+	margin:auto;
+	width:960px;
+	font-size:18px;
+	line-height: 21px;
+	padding-bottom: 15px;
+}
+
+#section_two h3{
+	padding-top:52px;
+	padding-bottom:45px;
+	text-align:center;
+	font-size:40px;
+	margin:auto;
+}
+
+
+
+#section_two img{
+	width:400px;
+	height:300px;
+	float:right;
+	padding-left:40px;
+	padding-bottom:20px;
+}
+
+#section_three h3{
+	padding-top:42px;
+	text-align:center;
+	font-size:40px;
+	margin:auto;
+}
+
+#section_three #photographs{
+	width:957px;
+	height: 498px;
+	margin:auto;
+	padding-top:34px;
+}
+
+#section_three div{
+	background-color:gray;
+	height:680px;
+	margin:auto;
+}
+
+#section_three .grid{
+	margin:0px;
+	width:44%;
+	height:100%;
+	padding-right:6%;
+	display:inline-block;
+	float:left;
+}
+
+#section_three .blocks{
+	display:inline-block;
+	height: 34.9%;
+
+}
+
+
+#section_three .blocks .title{
+	font-size:23px;
+	margin:0px;
+	margin-bottom: 6px;
+	color:white;
+}
+
+#section_three .blocks .caption{
+	font-size:18px;
+	margin:0px;
+	color:white;
+}
+
+
+#section_three img{
+	width:200px;
+	height:150px;
+	float:left;
+	padding-right:10px;
+}
+
+#section_four {
+	height:412px;
+	background-color:#c98db5;
+	margin:auto;
+}
+
+#section_four h3{
+	padding-top:42px;
+	text-align:center;
+	font-size:40px;
+	margin:auto;
+}
+
+#section_four div{
+	width:710px;
+	text-align:center;
+	margin:auto;
+}
+
+#section_four .text{
+	font-size:27px;
+	padding-top:7px;
+}
+
+#section_bottom div{
+	height:98px;
+	background-color:black;
+
+}
+
+#section_bottom .content .copyright{
+	font-size:19px;
+	font-weight:bold;
+	color:white;
+	float:left;
+}
+
+#section_bottom .content .social_media{
+	color:white;
+	float:right;
+	font-size:29px;
+	letter-spacing: 2.5px;
+}
+
+#section_bottom .content{
+	width:960px;
+	margin:auto;
+	padding-top:39px;
+
+}
