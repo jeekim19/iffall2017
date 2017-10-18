@@ -1,0 +1,122 @@
+
+h1,h2{
+	margin-top:0;
+	margin-bottom:0;
+	font-family: "mrs-eaves-roman-lining";
+	font-weight: 400;
+	transform: translateY(-120px);
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+#background img{
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+
+#queen_logo{
+	display:inline-block;
+	margin:auto;
+	transform: scale(.7) translateX(10px) translateY(-100px);
+
+}
+
+#queen_logo:hover{
+	display:inline-block;
+	margin:auto;
+	transform: scale(.7) translateX(10px) translateY(-90px);
+	opacity:.7;
+
+}
+
+h1{
+	font-size: 24px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	text-align: center;
+}
+
+h2{
+	font-size:16px;
+	text-align:center;
+	font-style: italic;
+	padding-bottom: 40px;
+}
+
+
+div#bohemian{
+	position:fixed;
+	top:0;
+	text-align:center;
+	color:#a18e3f;
+	letter-spacing:.3em;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 700;
+	font-size:100pt;
+	line-height: 63pt;
+	transform: translateX(30px);
+	width:100%;
+}
+
+
+div#rhapsody{
+	text-align:center;
+	position:fixed;
+	bottom:0;
+	color:#a18e3f;
+	letter-spacing:.3em;
+	width:100%;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 700;
+	font-size:100pt;
+	line-height: 63pt;
+	transform: translateX(30px);
+}
+
+section#box{
+	transform: translateY(115px);
+	width:800px;
+	height:500px;
+	background-color:rgba(15,21,65,.70);
+	margin:auto;
+	position: relative;
+	
+}
+
+section#text_border{
+	position:absolute;
+	text-align:center;
+	top:100px;
+	right:100px;
+	left:100px;
+	bottom:100px;
+	background-color:rgba(15,21,65,.85);
+	padding: 100px;
+	font-family: "Lusitana",serif;
+	font-size:14px;
+	color:#b8a962;
+	border-style:solid;
+	border-width:1pt;
+	border-color:#b8a962;
+	margin:auto;
+	overflow:auto;
+}
+
+#lyrics{
+	transform: translateY(-110px);
+	font-family: "mrs-eaves-roman-lining";
+	font-weight: 400;
+}
+
+#super_rock_part{
+	font-family: "mrs-eaves-roman-small-caps";
+}
+
+#Galileo{
+	font-size: 18pt;
+}
