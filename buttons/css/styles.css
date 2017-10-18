@@ -121,9 +121,17 @@ a#btn_indiegogo:hover {
 	background-color: #eb1478;
 }
 
+a#btn_cocacola{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	margin-top:70px;
+	border-radius: 100px;
+	background: transparent url("../images/cocacola_white.png") no-repeat;
+	background-size:contain;
+}
 
-
-a#btn_cocacola {
+a#btn_cocacola:hover {
 	display:inline-block;
 	width:120px;
 	height:120px;
@@ -133,22 +141,7 @@ a#btn_cocacola {
 	background-size:contain;
 }
 
-a#btn_cocacola:hover{
-	display:inline-block;
-	width:120px;
-	height:120px;
-	margin-top:70px;
-	background-size:contain;
-	transform:scale(1.5);
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+0,ff1a00+100 */
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 0%, #ff1a00 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 0%,#ff1a00 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 0%,#ff1a00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff1a00',GradientType=0 ); /* IE6-
-9 */
-	background: transparent url("../images/cocacola_white.png") no-repeat;
-}
+
 
 #img_apple{
 	width:60px;
@@ -242,7 +235,6 @@ a#btn_ideo {
 	font-size:48px;
 	text-transform:uppercase;
 	text-decoration:none;
-	font-kerning: 5em;
 }
 
 a#btn_ideo:hover{
@@ -253,6 +245,7 @@ a#btn_ideo:hover{
 	background-size:contain;
 	margin-top:100px;
 	display:inline-block;
+	letter-spacing:.2em;
 }
 
 a#btn_sardella{
@@ -260,8 +253,359 @@ a#btn_sardella{
 	margin-top:100px;
 	display:inline-block;
 	text-transform: uppercase;
-	
+	text-decoration: none;
+	font-size:40px;
+	color:black;
 
 }
 
+a#btn_sardella:hover{
+	font-family:'Rye','sans-serif';
+	margin-top:100px;
+	display:inline-block;
+	text-transform: uppercase;
+	transform:skewY(14deg);
+
+
+}
+
+#img_craigs {
+	width:180px;
+	height:120px;
+	margin-top:60px;
+	display:inline-block;
+}
+
+#img_craigs:hover{
+	width:180px;
+	height:120px;
+	margin-top:60px;
+	display:inline-block;
+	transform:scale(1.3);
+}
+
+a#btn_lyft {
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin-top:70px;
+	background: transparent url("../images/lyft_1.svg") no-repeat;
+	background-size:contain;
+	margin-left:20px;
+
+}
+
+a#btn_lyft:hover{
+	width:180px;
+	height:120px;
+	background: transparent url("../images/lyft_2.png") no-repeat;
+	background-size:contain;
+	opacity:.5;
+	margin-left:60px;
+}
+
+a#btn_samsung {
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin-top:100px;
+	background: transparent url("../images/samsung.png") no-repeat;
+	background-size:contain;
+}
+
+a#btn_samsung:hover{
+	transform:scale(1.4);
+	opacity:.5;
+}
+
+a#btn_dime {
+	margin-top:100px;
+	display:inline-block;
+	font-family:'Oswald', 'sans-serif';
+	font-size:28px;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:bold;
+	color:gray;
+}
+
+a#btn_dime:hover{
+	width:300px;
+	height:120px;
+	background: transparent url("../images/dime.png") no-repeat;
+	font-size:0;
+	background-size:100px;
+	margin-top:50px;
+	background-position:center;
+
+}
+
+a#btn_cartoonnetwork {
+	display: inline-block;
+	width: 180px;
+	height:50px;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+a#btn_cartoonnetwork:hover{
+	display: inline-block;
+	width: 180px;
+	height:50px;
+	margin-right: 20px;
+	margin-top: 50px;
+	transform:scale(.7);
+	opacity:.5;
+}
+
+a#btn_bissingers {
+	width:120px;
+	height:140px;
+	transform:scale(.5);
+	margin-right: 50px;
+	display:inline-block;
+	margin-top: 30px;
+}
+
+
+a#btn_bissingers:hover{
+	width:120px;
+	height:140px;
+	transform: rotate(20deg) scale(.5);
+	margin-right: 50px;
+	display:inline-block;
+	margin-top: 30px;
+
+}
+
+a#btn_ofa{
+	font-family: 'Lora','serif';
+	text-decoration:none;
+	color:white;
+	border-radius:100px;
+	background-color:#3599ca;
+	width:130px;
+	height:130px;
+	display:inline-block;
+	margin-top: 50px;
+	font-size:90px;
+	letter-spacing: 10;
+}
+
+a#btn_ofa:hover{
+	background: transparent url("../images/ofa.png") no-repeat;
+	background-size:contain;
+	font-size:0px;
+	margin-top: 50px;
+	display:inline-block;
+	width:400px;
+	background-color: none;
+	height:100px;
+	margin-left:50px;
+	border-radius:0;
+}
+
+a#btn_nbc{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	transform:scale(.2);
+	margin-right:100px;
+	margin-top: 60px;
+}
+
+a#btn_nbc:hover{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	transform:scale(.25);
+	margin-right:120px;
+	margin-top: 50px;
+
+}
+
+a#btn_nike {
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin-top:70px;
+	background: transparent url("../images/nike_black.jpg") no-repeat;
+	background-size:contain;
+	margin-left:20px;
+
+}
+
+a#btn_nike:hover{
+	width:180px;
+	height:120px;
+	background: transparent url("../images/nike_orange.jpg") no-repeat;
+	background-size:contain;
+	margin-left:20px;
+}
+
+a#btn_botanic{
+	display:inline-block;
+	width:180px;
+	height:120px;
+	transform:scale(.4);
+	margin-right:90px;
+}
+
+a#btn_botanic:hover{
+	display:inline-block;
+	width:180px;
+	height:120px;
+	transform:scale(.4);
+	margin-right:90px;
+	opacity:.5;
+}
+
+a#btn_hulkho{
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration:none;
+	color:yellow;
+	background-color:black;
+	width:130px;
+	height:75px;
+	display:inline-block;
+	font-size:30px;
+	background-position:fixed;
+	margin-top: 70px;
+}
+
+a#btn_hulkho:hover{
+	background:transparent url("../images/hulk.jpg") no-repeat;
+	background-size:contain;
+	width:130px;
+	height:130px;
+	display:inline-block;
+	font-size:0;
+	background-position:fixed;
+	margin-top: 70px;
+}
+
+a#btn_tesla {
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin-top:100px;
+	background: transparent url("../images/tesla_letter.jpg") no-repeat;
+	background-size:contain;
+
+}
+
+a#btn_tesla:hover{
+	width:180px;
+	height:120px;
+	background: transparent url("../images/tesla_logo.jpg") no-repeat;
+	background-size:contain;
+	margin-left:60px;
+	transform: translateY(-50px);
+}
+
+a#btn_fb{
+	display: inline-block;
+	width:180px;
+	height:100px;
+	transform:scale(.5)translateX(-30px);
+	margin:auto;
+	margin-right: 100px;
+}
+
+a#btn_fb:hover{
+	display: inline-block;
+	width:180px;
+	height:100px;
+	transform:scale(.5)translateX(-30px) translateY(-10px);
+	margin:auto;
+	opacity: .6;
+	margin-right: 100px;
+}
+
+a#btn_insta{
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top:50px;
+	margin-left:50px;
+	background: transparent url("../images/insta_black.jpg") no-repeat;
+	background-size:contain;
+
+}
+
+a#btn_insta:hover{
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top: 50px;
+	background: transparent url("../images/insta_color.png") no-repeat;
+	background-size:contain;
+	margin-left:50px;
+}
+
+a#btn_ny{
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top:100px;
+	background: transparent url("../images/ny_letter.jpg") no-repeat;
+	background-size:contain;
+
+}
+
+a#btn_ny:hover{
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top: 110px;
+	background: transparent url("../images/ny_logo.gif") no-repeat;
+	background-size:contain;
+	transform: scale(1.3);
+}
+
+a#btn_colorrun {
+	margin-top:100px;
+	display:inline-block;
+	font-family:'Oswald', 'sans-serif';
+	font-size:28px;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+}
+
+a#btn_colorrun:hover{
+	width:300px;
+	height:120px;
+	background: transparent url("../images/colorrun.gif") no-repeat;
+	font-size:0;
+	background-size:100px;
+	margin-top:100px;
+	transform: scale(1.6) translateX(-10px) translateY(30px);
+	margin:auto;
+	background-position:center;
+
+}
+
+a#btn_fitbit{
+	display:inline-block;
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top:100px;
+	background: transparent url("../images/fitbit_letter.png") no-repeat;
+	background-size:contain;
+
+}
+
+a#btn_fitbit:hover{
+	width:180px;
+	height:120px;
+	margin:auto;
+	margin-top: 100px;
+	background: transparent url("../images/fitbit_logo.png") no-repeat;
+	background-size:contain;
+}
 
