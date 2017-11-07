@@ -1,0 +1,69 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+body{
+	background-image: url("../02.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: -100px 0px;
+}
+
+a { 
+	position:absolute;
+	width: 100%; 
+	height: 100%; 
+}
+
+
+div{
+	float:right;
+	width:40%;
+	height:100%;
+	box-sizing: border-box;
+	padding:50px;
+	background-color: white;
+	font-family: 'Helvetica';
+	font-weight:bold;
+	font-size: 18pt;
+}
+
+span{
+	float:right;
+	font-size: 12pt;
+	padding-top:30px;
+}
+
+
+@media screen and (min-width: 1200px){
+	div{
+		font-size:24pt;
+	}
+	span{
+		font-size:14pt;
+	}
+	body{
+		background-position: -100px -100px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	div{
+		float:top;
+		width:100%;
+		height:200px;
+		font-size:12pt;
+		background-color:white;
+		box-sizing: border-box;
+		padding:30px;
+	}
+	span{
+		font-size:10pt;
+	}
+	body{
+		background-position: -130px 100px;
+	}
+}

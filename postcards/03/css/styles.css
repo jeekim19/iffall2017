@@ -1,0 +1,72 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+body{
+	background-image: url("../03.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 0px 100px;
+}
+
+a { 
+	position:absolute;
+	width: 100%; 
+	height: 100%; 
+}
+
+
+div{
+	width:100%;
+	height:200px;
+	box-sizing : border-box;
+	padding:50px;
+	background-color: white;
+	font-family: 'Helvetica';
+	font-weight:bold;
+	font-size: 12pt;
+}
+
+span{
+	float:right;
+	font-size: 10pt;
+	padding-top:30px;
+}
+
+
+@media screen and (min-width: 1500px){
+	div{
+		font-size:24pt;
+		width:100%;
+		height:300px;
+		box-sizing: border-box;
+		padding:50px;
+	}
+	span{
+		font-size:14pt;
+	}
+	body{
+		background-position: 0px 200px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	div{
+		float:top;
+		width:100%;
+		height:150px;
+		font-size:10pt;
+		background-color:white;
+		box-sizing: border-box;
+		padding:30px;
+	}
+	span{
+		font-size:8pt;
+	}
+	body{
+		background-position: -350px 100px;
+	}
+}
