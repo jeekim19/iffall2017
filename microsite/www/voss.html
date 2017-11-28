@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander McQueen - Vloss</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500|Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$('nav li ul').hide().removeClass('dropdown');
+				$('nav li').hover(function () {
+					$('ul', this).stop().fadeToggle(300);
+				    
+				});
+			});
+		</script>
+		<script>
+			var slideIndex = 0;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("circle");
+			  if (n > x.length) {slideIndex = 0}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace("circle_red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += "circle_red";
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li>
+					<a href="#">Career</a>
+					<ul class="dropdown">
+						<li><a href="beginning.html">THE BEGINNING</a></li>
+						<li><a href="defining_moments.html">DEFINING MOMENTS</a></li>
+						<li><a href="givenchy.html">GIVENCHY</a></li>
+						<li><a href="vloss.html">VOSS</a></li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="Content">
+			<div id="block_Content">
+
+			<div id="image_column">
+				<div id="slideshow" style="max-width:700px">
+					<img class="slides" src="images/voss_01.jpg" style="width:100%">
+					<img class="slides" src="images/voss_02.jpg" style="width:100%">
+				</div>
+
+				<div id="buttons_arrows">
+					<button class="arrows_left" onclick="plusDivs(-1)"></button>
+					<button class="arrows_right" onclick="plusDivs(1)"></button>
+				</div>
+				<div id="circles">
+					<button class="circle" onclick="currentDiv(1)"></button>
+					<button class="circle" onclick="currentDiv(2)"></button>	
+				</div>
+			</div>
+
+			<div id="Text_column">
+				<div id="title"> Voss </div>
+				<div id="bodytext">
+					<p>McQueen's most celebrated and dramatic catwalk show was his 2001 Spring/Summer collection, named VOSS. The centre piece tableau that dominated the room was an enormous glass box. But because the room outside the box was lit and the inside of the box was unlit, the glass walls appeared as large mirrors, so that the seated audience saw only their own reflection. Finally, after an hour, and when the show began, lights came on inside the enormous glass case and revealed the interior to be filled with moths and, at the centre, a naked model on a chaise longue with her face obscured by a gas mask. The glass walls then fell away and smashed on the ground.</p>
+
+					<p>The model chosen by McQueen to be the centre of the show was the British writer Michelle Olley. (The show also featured Kate Moss and Erin O'Connor). McQueen said that the tableau was based on the Joel Peter Witkin image Sanitorium.[28] The British fashion photographer Nick Knight later said of the VOSS show on his SHOWstudio.com blog:</p>
+
+					<p>"The girl in the box was Michelle Olley. She modelled for me in a story I did called Sister Honey... She was a writer and I remember she wrote a great piece on being the Butterfly Girl in the middle of that (McQueen) Glass Box show. I was sat on the front row, inbetween Alexandra Schulman and Gwyneth Paltrow. It was probably one of the best pieces of Fashion Theatre I have ever witnessed."[29] </p>
+
+					<p>Alexander McQueen later described his thoughts on the idea used during VOSS of forcing his audience to stare at their own reflection in the mirrored walls for over an hour:</p>
+
+					<p>"Ha! I was really pleased about that. I was looking at it on the monitor, watching everyone trying not to look at themselves. It was a great thing to do in the fashion industry—turn it back on them! God, I’ve had some freaky shows."[30]</p>
+
+					<p>In 2011, Michelle Olley was asked by the Metropolitan Museum of Art in New York to contribute to their Alexander McQueen exhibition, Savage Beauty.[31] She was interviewed by The Met about VOSS for the audio guide to the show. Olley's detailed diary/journal of modelling for McQueen – written between 18–27 September as the show was being planned and staged – was included in the Met Museum website coverage of the Savage Beauty exhibition.[32] The VOSS diary relates details of the show and encounters with McQueen, ending with how Olley returned home after the show to find:</p>
+
+					<p>"...a MASSIVE bouquet of flowers has arrived, with a note [from McQueen] saying, "Thank you for everything – you were beautiful! – Lee xxx"[32]</p>
+
+
+			</div>
+		</div>
+		</section>
+
+	</body>
+</html>

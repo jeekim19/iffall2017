@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander McQueen - Givenchy</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500|Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$('nav li ul').hide().removeClass('dropdown');
+				$('nav li').hover(function () {
+					$('ul', this).stop().fadeToggle(300);
+				    
+				});
+			});
+		</script>
+		<script>
+			var slideIndex = 0;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("circle");
+			  if (n > x.length) {slideIndex = 0}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace("circle_red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += "circle_red";
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li>
+					<a href="#">Career</a>
+					<ul class="dropdown">
+						<li><a href="beginning.html">THE BEGINNING</a></li>
+						<li><a href="defining_moments.html">DEFINING MOMENTS</a></li>
+						<li><a href="givenchy.html">GIVENCHY</a></li>
+						<li><a href="voss.html">VOSS</a></li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="Content">
+			<div id="block_Content">
+
+			<div id="image_column">
+				<div id="slideshow" style="max-width:700px">
+					<img class="slides" src="images/givenchy_01.jpg" style="width:100%">
+					<img class="slides" src="images/givenchy_02.jpg" style="width:100%">
+				</div>
+
+				<div id="buttons_arrows">
+					<button class="arrows_left" onclick="plusDivs(-1)"></button>
+					<button class="arrows_right" onclick="plusDivs(1)"></button>
+				</div>
+				<div id="circles">
+					<button class="circle" onclick="currentDiv(1)"></button>
+					<button class="circle" onclick="currentDiv(2)"></button>	
+				</div>
+			</div>
+
+			<div id="Text_column">
+				<div id="title"> Givenchy </div>
+				<div id="bodytext">
+					<p>Upon arrival at Givenchy, McQueen insulted the founder by calling him "irrelevant". His first couture collection with Givenchy was unsuccessful, with even McQueen telling Vogue in October 1997 that the collection was "crap". McQueen toned down his designs at Givenchy, but continued to indulge his rebellious streak, causing controversy in autumn 1998 with a show which included double amputee model Aimee Mullins striding down the catwalk on intricately carved wooden legs.[22] This year also saw McQueen complete one of his most famous runway shows previewing Spring/Summer 1999, where a single model, Shalom Harlow, graced the runway in a strapless white dress, before being rotated slowly on a revolving section of the catwalk whilst being sprayed with paint by two robotic guns.[25] Givenchy designs released by Vogue Patterns during this period may be credited to the late designer.[26]</p>
+
+					<p>McQueen received press attention after the May 2007 suicide of international style icon Isabella Blow. Rumours were published that there was a rift between McQueen and Blow at the time of her death, focusing on McQueen's under-appreciation of Blow.[27] In response to these rumours, McQueen told an interviewer:[24]
+
+					"It's so much bollocks. These people just don't know what they're talking about. They don't know me. They don't know my relationship with Isabella. It's complete bullshit. People can talk; you can ask her sisters ... That part of the industry, they should stay away from my life, or mine and Isabella's life. What I had with Isabella was completely dissociated from fashion, beyond fashion."</p>
+
+
+			</div>
+		</div>
+		</section>
+
+	</body>
+</html>

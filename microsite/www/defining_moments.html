@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander McQueen - Defining Moments</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500|Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$('nav li ul').hide().removeClass('dropdown');
+				$('nav li').hover(function () {
+					$('ul', this).stop().fadeToggle(300);
+				    
+				});
+			});
+		</script>
+		<script>
+			var slideIndex = 0;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("circle");
+			  if (n > x.length) {slideIndex = 0}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace("circle_red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += "circle_red";
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li>
+					<a href="#">Career</a>
+					<ul class="dropdown">
+						<li><a href="beginning.html">THE BEGINNING</a></li>
+						<li><a href="defining_moments.html">DEFINING MOMENTS</a></li>
+						<li><a href="givenchy.html">GIVENCHY</a></li>
+						<li><a href="voss.html">VOSS</a></li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="Content">
+			<div id="block_Content">
+
+			<div id="image_column">
+				<div id="slideshow" style="max-width:700px">
+					<img class="slides" src="images/bowie.jpg" style="width:100%">
+					<img class="slides" src="images/bjork.jpg" style="width:100%">
+					<img class="slides" src="images/bumster.jpg" style="width:100%">
+				</div>
+
+				<div id="buttons_arrows">
+					<button class="arrows_left" onclick="plusDivs(-1)"></button>
+					<button class="arrows_right" onclick="plusDivs(1)"></button>
+				</div>
+				<div id="circles">
+					<button class="circle" onclick="currentDiv(1)"></button>
+					<button class="circle" onclick="currentDiv(2)"></button>	
+					<button class="circle" onclick="currentDiv(3)"></button>
+				</div>
+			</div>
+
+			<div id="Text_column">
+				<div id="title"> Defining Moments </div>
+				<div id="bodytext">
+					<p>McQueen designed the wardrobe for David Bowie’s tours in 1996-1997, as well as the Union Jack coat worn by Bowie on the cover of his 1997 album Earthling. Icelandic singer Björk sought McQueen’s work for the cover of her album Homogenic in 1997.[17] McQueen also directed the music video for her song “Alarm Call” from the same album[18] and later contributed the iconic topless dress to her video for “Pagan Poetry”.[19] McQueen also collaborated with dancer Sylvie Guillem, director Robert Lepage and choreographer Russell Maliphant, designing wardrobe for theater show “Eonnagata”, directed by Robert Lepage. The film “Sylvie Guillem, on the edge” produced by French production company A DROITE DE LA LUNE, traces whole history of the creation of the show, from first rehearsals which took place in Quebec until world premiere which was held in 2008 at Sadler’s Wells theatre in London.</p>
+
+					<p>Camilla Belle in a 2009 dress by Alexander McQueen, listed among “100 Best Dresses of the Decade” by InStyle magazine.McQueen’s early runway collections developed his reputation for controversy and shock tactics (earning the title “l’enfant terrible” and “the hooligan of English fashion”),[4] with trousers aptly named “bumsters” and a collection titled “Highland Rape”.[5][21][22] In 2004, journalist Caroline Evans also wrote of McQueen’s “theatrical staging of cruelty”, in 032c magazine, referring to his dark and tortured renderings of Scottish history.[23] McQueen was known for his lavish, unconventional runway shows: a recreation of a shipwreck for his spring 2003 collection; spring 2005’s human chess game; and his autumn 2006 show “Widows of Culloden”, which featured a life-sized hologram of supermodel Kate Moss dressed in yards of rippling fabric.[24] </p>
+
+					<p>McQueen’s “bumsters” spawned a trend in low rise jeans; on their debut they attracted many comments and debate.[11] Michael Oliveira-Salac, the director of Blow PR and a friend of McQueen’s said, “The bumster for me is what defined McQueen.”[11] McQueen also became known for using skulls in his designs. A scarf bearing the motif became a celebrity must-have and was copied around the world.[11] </p>
+
+					<p>McQueen has been credited with bringing drama and extravagance to the catwalk.[11] He used new technology and innovation to add a different twist to his shows and often shocked and surprised audiences. The silhouettes that he created have been credited for adding a sense of fantasy and rebellion to fashion.[11] McQueen became one of the first designers to use Indian models in London.</p></div>
+			</div>
+		</div>
+		</section>
+
+	</body>
+</html>

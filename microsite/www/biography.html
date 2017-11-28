@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander McQueen - Beginning</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500|Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$('nav li ul').hide().removeClass('dropdown');
+				$('nav li').hover(function () {
+					$('ul', this).stop().fadeToggle(300);
+				    
+				});
+			});
+		</script>
+		<script>
+			var slideIndex = 0;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("circle");
+			  if (n > x.length) {slideIndex = 0}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace("circle_red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += "circle_red";
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li>
+					<a href="#">Career</a>
+					<ul class="dropdown">
+						<li><a href="beginning.html">THE BEGINNING</a></li>
+						<li><a href="defining_moments.html">DEFINING MOMENTS</a></li>
+						<li><a href="givenchy.html">GIVENCHY</a></li>
+						<li><a href="voss.html">VOSS</a></li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="Content">
+
+			<div id="image_column">
+				<img class="slides" src="images/biography.jpg" style="width:100%">
+			</div>
+
+			<div id="Text_column">
+				<div id="title"> Biography </div>
+				<div id="bodytext">
+					<p>
+					Born on 17 March 1969 in Lewisham, London, to Scottish[3] taxi driver Ronald[4] and social science teacher Joyce, McQueen was the youngest of six children.[5][6] He reportedly grew up in a council flat,[7] but, in fact, the McQueens moved to a terraced house in Stratford in his first year.[8]</p>
+
+					<p>McQueen later attended Rokeby School and left aged 16 in 1985 with one O-level in art,[5] going on to complete a tailoring course at Newham College and serve an apprenticeship with Savile Row tailors Anderson & Sheppard, before joining Gieves & Hawkes and, later, the theatrical costumiers Angels and Bermans.[9] While serving his apprenticeship, McQueen attended the Rosetta Art Centre[10] led by Yvonne Humble, who also wrote his reference that saw him go straight on to an MA course at Central St Martins. The skills he learned as an apprentice on Savile Row helped earn him a reputation in the fashion world as an expert in creating an impeccably tailored look.</p>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
