@@ -356,7 +356,6 @@ div#showman{
 	font-weight:300;
 	line-height:18pt;
 	letter-spacing:.2px;
-	overflow:auto;
 	width:360px;
 	height:400px;
 	display:block;
@@ -369,10 +368,10 @@ div#showman{
 
 #image_column{
 	display:block;
-	width:500px;
+	width:550px;
 	list-style:none;
 	position:absolute;
-	left:20%;
+	left:15%;
 }
 
 
@@ -382,7 +381,58 @@ div#showman{
 
 div#circles{
 	display:block;
-	position:relative;
+	position:fixed;
 	top:200px;
+	left:135px;
+}
 
+div#slideshow{
+	display:block;
+	position:fixed;
+	width:500px;
+}
+
+button.circle{
+	border-radius:10px;
+	width:20px;
+	height:20px;
+	transform: scale(.7);
+	margin-bottom: 5px;
+}
+
+.circle_red{
+	border-radius:10px;
+	width:20px;
+	height:20px;
+	transform: scale(.7);
+	margin-bottom: 5px;
+	border-style:none;
+	background-color:#f0552a;
+}
+
+button.arrows_left{
+	background-image: url("../images/arrow_left.png");
+	background-color:transparent;
+	background-repeat: no-repeat;
+	position:fixed;
+	width: 10px;
+	border-style:none;
+	height:15px;
+	border-size:0;
+	background-size: contain;
+	top: 285px;
+	left:130px;
+}
+
+button.arrows_right{
+	background-image: url("../images/arrow_right.png");
+	background-color:transparent;
+	background-repeat: no-repeat;
+	position:fixed;
+	border-style:none;
+	background-size: contain;
+	width:10px;
+	height:15px;
+	top: 285px;
+	left:150px;
 }
