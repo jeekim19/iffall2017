@@ -1,0 +1,94 @@
+body{
+	margin:0;
+	padding:0;
+}
+div.button_container {
+	width:200px;
+	height: 200px;
+	border-radius: 100px;
+	margin-right: 50px;
+	display:inline-grid;
+}
+
+a#btn_button {
+	background-color: #84ceb0;
+	border-radius: 100px;
+	background-image: url(../images/mouse.png);
+	background-position: center;
+	background-size: 45%;
+	background-repeat:no-repeat;
+}
+
+a#btn_button:hover {
+	background-color: #e43725;
+	border-radius: 100px;
+	background-image: url(../images/buttons_2.png);
+	background-position: center;
+	background-size: 65%;
+	background-repeat:no-repeat;
+}
+
+a#btn_lyrics {
+	background-color: #84ceb0;
+	border-radius: 100px;
+	background-image: url(../images/lyrics.png);
+	background-position: center;
+	background-size: 50%;
+	background-repeat:no-repeat;
+}
+
+a#btn_lyrics:hover {
+	background-color: #e43725;
+	border-radius: 100px;
+	background-image: url(../images/lyrics_2.png);
+	background-position: center;
+	background-size: 65%;
+	background-repeat:no-repeat;
+}
+
+a#btn_mocksite {
+	background-color: #84ceb0;
+	border-radius: 100px;
+	background-image: url(../images/microsite.png);
+	background-position: center;
+	background-size: 55%;
+	background-repeat:no-repeat;
+}
+
+a#btn_mocksite:hover {
+	background-color: #e43725;
+	border-radius: 100px;
+	background-image: url(../images/microsite_2.png);
+	background-position: center;
+	background-size: 65%;
+	background-repeat:no-repeat;
+}
+
+div#content{
+	display:inline-block;
+	margin-left:25%;
+}
+
+div#containers{
+	margin-top: 100px;
+}
+
+h1 {
+	font-family: 'Abril Fatface',cursive;
+	font-size: 52pt;
+	letter-spacing: .02em;
+	line-height: 10pt;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+
+h2{
+	font-family: 'Abril Fatface',cursive;
+	font-size:13pt;
+	letter-spacing: .01em;
+	line-height: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+	color:#e43725;
+
+}
