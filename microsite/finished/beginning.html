@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander McQueen - Beginning</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500|Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$('nav li ul').hide().removeClass('dropdown');
+				$('nav li').hover(function () {
+					$('ul', this).stop().fadeToggle(300);
+				    
+				});
+			});
+		</script>
+		<script>
+			var slideIndex = 0;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("circle");
+			  if (n > x.length) {slideIndex = 0}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace("circle_red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += "circle_red";
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li>
+					<a href="#">Career</a>
+					<ul class="dropdown">
+						<li><a href="beginning.html">THE BEGINNING</a></li>
+						<li><a href="defining_moments.html">DEFINING MOMENTS</a></li>
+						<li><a href="givenchy.html">GIVENCHY</a></li>
+						<li><a href="voss.html">VOSS</a></li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="Content">
+
+			<div id="image_column">
+				<img class="slides" src="images/beginning" style="width:100%">
+			</div>
+
+			<div id="Text_column">
+				<div id="title"> The Beginning </div>
+				<div id="bodytext">
+					<p>
+					McQueen returned to London and applied to Central Saint Martins College of Art and Design, to work as a pattern cutter tutor. Because of the strength of his portfolio he was persuaded by Bobby Hillson, the Head of the Masters course, to enroll in the course as a student.[12][13] He received his master’s degree in fashion design and his 1992 graduation collection was bought in its entirety by influential fashion stylist Isabella Blow, who was said to have persuaded McQueen to become known as Alexander (his middle name) when he subsequently launched his fashion career.[6] Isabella Blow paved the way for Alexander McQueen using her unique style and contacts to help him she was in many ways his mentor. It was during this period that McQueen relocated to Hoxton, which housed other new designers, including Hussein Chalayan and Pauric Sweeney.[14] It was shortly after creating his second collection,”McQueen’s Theatre of Cruelty”, that McQueen met Katy England, his soon to be “right hand woman”,[15] when outside of a “high profile fashion show” trying to “blag her way in”.[16] He promptly asked her to join him for his third collection, “The Birds” at Kings Cross, as “creative director”.[16] Katy England continued to work with McQueen thereafter, greatly influencing his work – his “second opinion”.</p>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
